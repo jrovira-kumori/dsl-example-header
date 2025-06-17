@@ -1,0 +1,23 @@
+import (
+    "github.com/jrovira-kumori/dsl-example/component"
+    "kumori"
+)
+
+service EchoServer
+
+srv {
+    client { a "tcp" }
+    server { a "http" }
+    duplex { a { protocol "grpc", port 1337 } }
+}
+
+resource {
+    Port:    kumori.Port
+    Volume:  kumori.Volume
+}
+
+config   {
+    Port:       number
+    Response:   string
+    Scale:      number = 1
+}

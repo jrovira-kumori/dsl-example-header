@@ -1,0 +1,25 @@
+package component
+
+import (
+    "kumori"
+    "strconv"
+)
+
+component EchoServer 
+
+srv {
+    client { a "tcp" }
+    server { a "http" }
+    duplex { a { protocol "grpc", port 1337 } }
+}
+
+resource {
+    Port:    kumori.Port
+    Volume:  kumori.Volume
+}
+
+config {
+    Port:       number
+    Response:   string = "Hello world!"
+    Scale:      number = 1
+}
