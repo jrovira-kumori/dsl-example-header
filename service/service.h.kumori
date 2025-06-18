@@ -1,5 +1,4 @@
 import (
-    "github.com/jrovira-kumori/dsl-example/component"
     "kumori"
 )
 

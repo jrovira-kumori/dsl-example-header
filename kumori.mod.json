@@ -1,6 +1,6 @@
 {
     "spec": "kumori/module/v1",
-    "module": "github.com/jrovira-kumori/dsl-example-headers",
+    "module": "github.com/jrovira-kumori/dsl-example-header",
     "kumori": "0.0.1",
     "requires": []
 }
